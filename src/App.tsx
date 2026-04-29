@@ -4,12 +4,14 @@ import MarsRoverPage from './pages/MarsRoverPage'
 import NeoPage from './pages/NeoPage'
 import EpicPage from './pages/EpicPage'
 import NavBar from './components/Navbar'
+import { ParticlesBackground } from './components/ParticlesBackground'
 
 function App() {
 
   return (
     <BrowserRouter>
     <NavBar />
+    <ParticlesBackground />
       <Routes>
         <Route path='/' element={<HomePage />} />
         <Route path='/mars-rover' element={<MarsRoverPage />} />
