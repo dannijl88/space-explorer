@@ -8,7 +8,7 @@ export default function MarsRoverPage() {
     const [camera, setCamera] = useState('fhaz')
     const [date, setDate] = useState('2024-01-01')
 
-    const { dataRover, error, isLoading } = useMarsRover(rover, camera, date)
+    const { dataRover } = useMarsRover(rover, camera, date)
 
     return(
         <div className="mars-rover-page">

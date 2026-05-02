@@ -5,6 +5,7 @@ import NeoPage from './pages/NeoPage'
 import EpicPage from './pages/EpicPage'
 import NavBar from './components/Navbar'
 import { ParticlesBackground } from './components/ParticlesBackground'
+import { Footer } from './components/Footer'
 
 function App() {
 
@@ -18,6 +19,7 @@ function App() {
         <Route path='/neo' element={<NeoPage />} />
         <Route path='/epic' element={<EpicPage />} />
       </Routes>
+      <Footer />
     </BrowserRouter>
   )
 }
