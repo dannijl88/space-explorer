@@ -12,7 +12,7 @@
     align-items: center;
     justify-content: center;
     gap: .8rem;
-    padding: 0 6rem;
+    padding: 0 40rem;
 }
 
 .nasa-gallery-page__hero-title{
@@ -25,7 +25,7 @@
 
 .nasa-gallery-page__content{
     max-width: 1400px;
-    margin: 0 auto;
+    margin: 10rem auto;
 }
 
 .nasa-gallery-page__content-input{
@@ -50,6 +50,7 @@
     width: 100%;
     height: 350px;
     object-fit: cover;
+    border-radius: 5px;
 }
 
 .nasa-gallery-page__content-grid-item-description{
