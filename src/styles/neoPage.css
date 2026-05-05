@@ -16,6 +16,14 @@
     margin-bottom: 8rem;
 }
 
+.neo-page__hero-title{
+    font-size: 3rem;
+}
+
+.neo-page__hero-description{
+    font-size: 1.6rem;
+}
+
 .neo-page__cards-container{
     color: white;
     display: flex;

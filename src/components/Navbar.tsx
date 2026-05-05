@@ -10,7 +10,7 @@ export default function NavBar(){
             <nav className='navbar-header__nav'>
                 <ul className='navbar-header__link-container'>
                     <li><Link to="/" className="navbar-header__link">Inicio</Link></li>
-                    <li><Link to="/mars-rover" className="navbar-header__link">Rover Marte</Link></li>
+                    <li><Link to="/nasa-gallery" className="navbar-header__link">Galeria Nasa</Link></li>
                     <li><Link to="/epic" className="navbar-header__link">Epic</Link></li>
                     <li><Link to="/neo" className="navbar-header__link">Neo</Link></li>
                 </ul>

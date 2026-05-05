@@ -8,8 +8,8 @@ export default function EpicPage() {
     return(
         <main className="epic-page">
             <header className="epic-page__hero">
-                <h2>EPIC (Earth Polychromatic Imaging Camera)</h2>
-                <p>Observa la Tierra tal y como la ve el satélite DSCOVR desde el punto de Lagrange L1, a más de un millón de kilómetros de distancia. Imágenes reales del planeta completo capturadas cada día.</p>
+                <h2 className="epic-page__hero-title">EPIC (Earth Polychromatic Imaging Camera)</h2>
+                <p className="epic-page__hero-description">Observa la Tierra tal y como la ve el satélite DSCOVR desde el punto de Lagrange L1, a más de un millón de kilómetros de distancia. Imágenes reales del planeta completo capturadas cada día.</p>
             </header>
             <div className="epic-page__grid">
                 {error ? "Ha ocurrido un error" : ""}
