@@ -19,6 +19,8 @@ export default function NeoPage() {
             <main className="neo-page__cards-container">
                 {
                     asteroids.map((asteroid) => {
+                        {isLoading ? "Cargando..." : ""}
+                        {error ? "Ha ocurrido un error..." : ""}
                         return <article className={asteroid.is_potentially_hazardous_asteroid ? "neo-page__cards-container-card-danger" : "neo-page__cards-container-card"} key={asteroid.id}>
                             {asteroid.is_potentially_hazardous_asteroid ? <img width={24} height={24} src={dangerIcon} /> : ""}
                             <p>Nombre: {asteroid.name}</p>
