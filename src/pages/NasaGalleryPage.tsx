@@ -20,7 +20,7 @@ export default function NasaGalleryPage() {
                 <input className='nasa-gallery-page__content-input' type="text" placeholder='Busca imágenes... galaxy, nebula, mars, apollo...' value={param} onChange={(e) => setParam(e.target.value)} />
                 <section className='nasa-gallery-page__content-grid'>
                     {nasaData?.collection.items.map((item) => {
-                        return <div className='nasa-gallery-page__content-grid-item'>
+                        return <div key={item.data[0].nasa_id} className='nasa-gallery-page__content-grid-item'>
                             <img className='nasa-gallery-page__content-grid-item-img' src={item.links[0].href} />
                             <p className='nasa-gallery-page__content-grid-item-title'>{item.data[0].title}</p>
                             <p className='nasa-gallery-page__content-grid-item-description'>{item.data[0].description}</p>
