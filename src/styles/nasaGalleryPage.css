@@ -12,7 +12,7 @@
     align-items: center;
     justify-content: center;
     gap: .8rem;
-    padding: 0 40rem;
+    padding: 0 20%;
 }
 
 .nasa-gallery-page__hero-title{
@@ -60,3 +60,26 @@
     overflow: hidden;
 }
 
+/* RESPONSIVE */
+@media (max-width: 768px){
+    .nasa-gallery-page__hero-title{
+        font-size: 2.3rem;
+    }
+
+    .nasa-gallery-page__hero-description{
+        font-size: 1.3rem;
+    }
+
+    .nasa-gallery-page__content-input{
+        width: 100%;
+    }
+
+    .nasa-gallery-page__content{
+        padding: 1rem;
+        margin: 6rem auto;
+    }
+
+    .nasa-gallery-page__content-grid{
+        gap: 2.5rem;
+    }
+}

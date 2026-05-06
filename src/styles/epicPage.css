@@ -11,7 +11,7 @@
     align-items: center;
     justify-content: center;
     gap: .8rem;
-    padding: 0 40rem;
+    padding: 0 20%;
 }
 
 .epic-page__hero-title{
@@ -39,4 +39,20 @@
 .epic-page__grid-item-img{
     width: 100%;
     object-fit: cover;
+    border-radius: 5px;
+}
+
+/* RESPONSIVE */
+@media (max-width: 768px){
+    .epic-page__hero-title{
+        font-size: 2.3rem;
+    }
+
+    .epic-page__hero-description{
+        font-size: 1.3rem;
+    }
+
+    .epic-page__grid{
+        padding: 1rem;
+    }
 }

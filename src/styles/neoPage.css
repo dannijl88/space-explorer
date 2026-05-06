@@ -12,7 +12,7 @@
     align-items: center;
     justify-content: center;
     gap: .8rem;
-    padding: 0 40rem;
+    padding: 0 20%;
     margin-bottom: 8rem;
 }
 
@@ -46,4 +46,19 @@
     background-color: #111122;
     border-radius: 8px;
     padding: 1rem;
+}
+
+/* RESPONSIVE */
+@media (max-width: 768px){
+    .neo-page__hero-title{
+        font-size: 2.3rem;
+    }
+
+    .neo-page__hero-description{
+        font-size: 1.3rem;
+    }
+
+    .epic-page__grid{
+        padding: 1rem;
+    }
 }
