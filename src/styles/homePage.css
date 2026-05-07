@@ -25,7 +25,7 @@
 
 .home-page__apod{
     color: white;
-    padding: 3rem;
+    padding: 1rem;
     width: 100%;
     max-width: 1400px;
     margin: 0 auto;
@@ -72,4 +72,19 @@
     .home-page__apod-container-img{
         width: 100%;
     }
+}
+
+@media (max-width: 480px){
+    .home-page__hero{
+        padding: 5%;
+    }
+
+    .home-page__hero-title{
+        font-size: 1.8rem;
+    }
+
+    .home-page__hero-description{
+        font-size: 1rem;
+    }
+
 }

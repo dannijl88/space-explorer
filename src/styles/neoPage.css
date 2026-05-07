@@ -26,12 +26,12 @@
 
 .neo-page__cards-container{
     color: white;
-    display: flex;
-    flex-wrap: wrap;
-    justify-content: center;
+    display: grid;
+    grid-template-columns: repeat(auto-fill, minmax(230px, 1fr));
     gap: 1rem;
     max-width: 1400px;
     margin: 0 auto;
+    padding: 1rem;
 }
 
 .neo-page__cards-container-card{
@@ -61,4 +61,27 @@
     .epic-page__grid{
         padding: 1rem;
     }
+}
+
+@media (max-width: 480px){
+    .neo-page__hero{
+        padding: 5%;
+    }
+
+    .neo-page__hero-title{
+        font-size: 1.8rem;
+    }
+
+    .neo-page__hero-description{
+        font-size: 1rem;
+    }
+
+    .neo-page__cards-container-card{
+        text-align: center;
+    }
+
+    .neo-page__cards-container-card-danger{
+        text-align: center;
+    }
+
 }

@@ -41,9 +41,10 @@
 
 .nasa-gallery-page__content-grid{
     display: grid;
-    grid-template-columns: repeat(auto-fill, minmax(400px, 1fr));
+    grid-template-columns: repeat(auto-fill, minmax(300px, 1fr));
     gap: 1rem;
     color: white;
+    padding: .5rem;
 }
 
 .nasa-gallery-page__content-grid-item-img{
@@ -82,4 +83,19 @@
     .nasa-gallery-page__content-grid{
         gap: 2.5rem;
     }
+}
+
+@media (max-width: 480px){
+    .nasa-gallery-page__hero{
+        padding: 5%;
+    }
+
+    .nasa-gallery__hero-title{
+        font-size: 1.8rem;
+    }
+
+    .nasa-gallery__hero-description{
+        font-size: 1rem;
+    }
+
 }

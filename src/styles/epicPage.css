@@ -32,7 +32,7 @@
     margin: 0 auto;
     color: white;
     display: grid;
-    grid-template-columns: repeat(auto-fill, minmax(400px, 1fr));
+    grid-template-columns: repeat(auto-fill, minmax(300px, 1fr));
     gap: 1rem;
 }
 
@@ -55,4 +55,19 @@
     .epic-page__grid{
         padding: 1rem;
     }
+}
+
+@media (max-width: 480px){
+    .epic-page__hero{
+        padding: 5%;
+    }
+
+    .epic-page__hero-title{
+        font-size: 1.8rem;
+    }
+
+    .epic-page__hero-description{
+        font-size: 1rem;
+    }
+
 }
