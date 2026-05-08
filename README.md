@@ -1,73 +1,81 @@
-# React + TypeScript + Vite
+# 🚀 SpaceExplorer
 
-This template provides a minimal setup to get React working in Vite with HMR and some ESLint rules.
+Aplicación web que consume las APIs reales de la NASA para explorar el universo desde el navegador.
 
-Currently, two official plugins are available:
+🌌 [Ver demo en Vercel](https://space-explorer-livid.vercel.app)  
+💻 [Repositorio en GitHub](https://github.com/dannijl88/space-explorer)
 
-- [@vitejs/plugin-react](https://github.com/vitejs/vite-plugin-react/blob/main/packages/plugin-react) uses [Oxc](https://oxc.rs)
-- [@vitejs/plugin-react-swc](https://github.com/vitejs/vite-plugin-react/blob/main/packages/plugin-react-swc) uses [SWC](https://swc.rs/)
+---
 
-## React Compiler
+## 📸 Páginas
 
-The React Compiler is not enabled on this template because of its impact on dev & build performances. To add it, see [this documentation](https://react.dev/learn/react-compiler/installation).
+| Ruta | Página | Descripción |
+|------|--------|-------------|
+| `/` | HomePage | Imagen Astronómica del Día (APOD) con título y descripción |
+| `/nasa-gallery` | NasaGalleryPage | Galería de imágenes históricas con buscador |
+| `/epic` | EpicPage | Fotos de la Tierra desde el satélite DSCOVR |
+| `/neo` | NeoPage | Asteroides cercanos con indicador de peligrosidad |
 
-## Expanding the ESLint configuration
+---
 
-If you are developing a production application, we recommend updating the configuration to enable type-aware lint rules:
+## 🛠️ Stack
 
-```js
-export default defineConfig([
-  globalIgnores(['dist']),
-  {
-    files: ['**/*.{ts,tsx}'],
-    extends: [
-      // Other configs...
+- **React 19** + **TypeScript**
+- **React Router** — navegación entre páginas
+- **Vite** — bundler y servidor de desarrollo
+- **CSS puro con metodología BEM**
+- **tsparticles** — fondo de partículas animado
+- **Vitest** + **React Testing Library** — tests unitarios
+- **Vercel** — despliegue continuo
 
-      // Remove tseslint.configs.recommended and replace with this
-      tseslint.configs.recommendedTypeChecked,
-      // Alternatively, use this for stricter rules
-      tseslint.configs.strictTypeChecked,
-      // Optionally, add this for stylistic rules
-      tseslint.configs.stylisticTypeChecked,
+---
 
-      // Other configs...
-    ],
-    languageOptions: {
-      parserOptions: {
-        project: ['./tsconfig.node.json', './tsconfig.app.json'],
-        tsconfigRootDir: import.meta.dirname,
-      },
-      // other options...
-    },
-  },
-])
+## 📁 Estructura
+src/
+├── api/          # Funciones fetch para cada API de la NASA
+├── components/   # Navbar, Footer, ParticlesBackground
+├── hooks/        # Custom hooks: useApod, useEpic, useNeo, useNasaImages
+├── pages/        # Una página por sección
+├── styles/       # Archivos CSS con metodología BEM
+└── types/        # Interfaces TypeScript para las respuestas de la API
+
+---
+
+## 🧪 Tests
+
+El proyecto incluye tests unitarios para todos los custom hooks con mocking de fetch.
+
+```bash
+npm test
 ```
 
-You can also install [eslint-plugin-react-x](https://github.com/Rel1cx/eslint-react/tree/main/packages/plugins/eslint-plugin-react-x) and [eslint-plugin-react-dom](https://github.com/Rel1cx/eslint-react/tree/main/packages/plugins/eslint-plugin-react-dom) for React-specific lint rules:
+Hooks testeados: `useApod` · `useNasaImages` · `useEpic` · `useNeo`
 
-```js
-// eslint.config.js
-import reactX from 'eslint-plugin-react-x'
-import reactDom from 'eslint-plugin-react-dom'
+Cada hook tiene tests para tres escenarios: carga, éxito y error.
 
-export default defineConfig([
-  globalIgnores(['dist']),
-  {
-    files: ['**/*.{ts,tsx}'],
-    extends: [
-      // Other configs...
-      // Enable lint rules for React
-      reactX.configs['recommended-typescript'],
-      // Enable lint rules for React DOM
-      reactDom.configs.recommended,
-    ],
-    languageOptions: {
-      parserOptions: {
-        project: ['./tsconfig.node.json', './tsconfig.app.json'],
-        tsconfigRootDir: import.meta.dirname,
-      },
-      // other options...
-    },
-  },
-])
+---
+
+## 🔑 Variables de entorno
+
+Crea un archivo `.env` en la raíz del proyecto:
+VITE_NASA_API_KEY=tu_api_key_aqui
+
+Consigue tu API key gratuita en [api.nasa.gov](https://api.nasa.gov)
+
+---
+
+## 🚀 Instalación
+
+```bash
+npm install
+npm run dev
 ```
+
+---
+
+## 📡 APIs utilizadas
+
+- [NASA APOD](https://api.nasa.gov) — Imagen astronómica del día
+- [NASA EPIC](https://epic.gsfc.nasa.gov) — Fotos de la Tierra desde satélite
+- [NASA NeoWs](https://api.nasa.gov) — Asteroides cercanos a la Tierra
+- [NASA Image and Video Library](https://images.nasa.gov) — Galería de imágenes históricas
